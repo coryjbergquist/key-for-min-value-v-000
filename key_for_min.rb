@@ -4,8 +4,17 @@
 def key_for_min_value(name_hash)
 array = []
 array << name_hash.map {|name, value|
-  value }
-  array
+  value
+  }
+  array.map {|x,y| 
+    if x == y 
+      0
+    elsif x < y
+      -1
+    elsif x > y 
+      1
+    end  
+  end
 end
 
-name_hash = {bob: 2, jeff: 3}
+name_hash = {bob: 3, jeff: 2}
