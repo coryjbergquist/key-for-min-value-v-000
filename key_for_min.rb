@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
 array = []
-array << name_hash.each {|name, value|
+array << name_hash.map {|name, value|
   value }
   array
 end
